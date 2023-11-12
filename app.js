@@ -58,7 +58,9 @@ const printData = (arr) => {
                 <p>Locacion:${personaje.location.name}</p>  
             </div>
 
-            <div class="accion-link"  id="btnVerMas" personaje-id=${personaje.id}>VER MÁS...</div>
+            <div class="ver-personaje">
+            <a id="ver-mas" href="https://rickandmortyapi.com/api/character/${personaje.id}" target="_blank"> VER MÁS... </a>
+            </div>
             
         </div>
     </div>

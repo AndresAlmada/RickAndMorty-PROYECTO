@@ -13,6 +13,7 @@ header{
     justify-content: space-between;
     font-family: 'Orbitron', sans-serif;
     
+    padding-top: 1em;
 }
 
 .nombrePagina{
@@ -20,21 +21,66 @@ header{
 }
 
 .imagen-encabezado {
-    align-items: center;
-    align-content: center;
+    margin-left: 20%;
 }
 
 .encabezado{
     color: 	#97ce4c;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 1em;
 }
 
 nav{
     padding: 30px;
-    font-size: larger;
-   
+    font-size: larger;  
+    margin-right: 0.5em;
 }
+
+nav a:hover {
+    color: rgb(202, 202, 26);
+   /*  background-color: #000000a6; */
+}
+
+/* probando menu hamburguesa*/
+
+/* .nav2 {
+    display: none;
+}
+
+.menu2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.menu2 > li {
+    display: inline-block;
+}
+
+.menu2 a {
+    display: block;
+    padding: 10px 20px;
+    color: rgb(221, 199, 2);
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+}
+
+.submenu2 {
+    display: none;
+    position: absolute;
+}
+
+.submenu2 li {
+    display: block;
+}
+
+.menu2 > li:hover .submenu {
+    display: block;
+}
+ */
+/*hasta aca*/
+
 
 .personajes-total {
     padding-left: 2em;
@@ -113,6 +159,29 @@ body {
     padding: 0.5em;
 }
 
+.ver-personaje {
+    border-top: 1px solid white;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+#ver-mas {
+    color:#97ce4c;
+    text-decoration: none;
+    margin-left: 0.5em;
+}
+
+#ver-mas:visited {
+    color: #62a4ab;
+}
+
+#ver-mas:hover {
+    text-shadow: 2px 2px 4px rgba(139, 139, 139, 0.932);
+    transform: scale(1.1);
+    display: inline-block;
+    color: rgb(202, 202, 26);
+}
+
 .pagination {
     margin-top: 20px;
 }
@@ -158,3 +227,29 @@ button {
     height: 100%;
   }
 
+/*   @media  (max-width: 480px) {
+    .nav {
+        display:none;
+    }
+
+    .nav2 {
+        display: flex;        
+    }
+
+    .nav2 nav {
+        width: 100%;
+        margin:0 ;
+        padding: 0;
+    }
+  } */
+
+.footer {
+    color: rgb(219, 219, 20);
+    font-family: 'Fredoka', sans-serif;
+    margin-bottom: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}

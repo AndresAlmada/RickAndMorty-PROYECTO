@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-header{
+.encabeza2 {
     background-image: linear-gradient(to top, #000000, #0d0d0d, #161616, #1d1d1d, #252424);
     height: 200px;
     width: 100%;
@@ -22,6 +22,7 @@ header{
 
 .imagen-encabezado {
     margin-left: 20%;
+    width: 130px;
 }
 
 .encabezado{
@@ -47,9 +48,56 @@ nav a:hover {
     display: none;
 }
 
-@media screen and (max-widht:550px) {
-    .abrir-menu {
+@media screen and (max-width: 550px) {
+
+    .encabeza2 {
+        display: flex;
+        flex-direction: column;
+        
+        margin-bottom: 20px;
+        height: 80px;
+        padding-bottom: 1.5em;
+    }
+
+    .nombrePagina {
+        font-size: larger;
+    }
+
+    .imagen-encabezado img {
+        height: 80px;
+    }
+
+   /*  .abrir-menu {
         display: block;
+    }
+
+    .menu {
+        display: none;
+    } */
+
+    .menu {
+        position: absolute;
+        
+    }
+
+    .menu a {
+        flex-direction: column;
+    } */
+
+
+
+
+    #root {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 80%;
+        margin: 15px;
+    }
+
+    .card img{
+        width: 100%;
     }
 }
 

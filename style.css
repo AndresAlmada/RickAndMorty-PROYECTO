@@ -38,49 +38,22 @@ nav{
 
 nav a:hover {
     color: rgb(202, 202, 26);
-   /*  background-color: #000000a6; */
 }
 
-/* probando menu hamburguesa*/
 
-/* .nav2 {
+/* MENU HAMBURGUESA */
+
+.abrir-menu {
     display: none;
 }
 
-.menu2 {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+@media screen and (max-widht:550px) {
+    .abrir-menu {
+        display: block;
+    }
 }
 
-.menu2 > li {
-    display: inline-block;
-}
-
-.menu2 a {
-    display: block;
-    padding: 10px 20px;
-    color: rgb(221, 199, 2);
-    text-decoration: none;
-    background-color: rgb(0, 0, 0);
-}
-
-.submenu2 {
-    display: none;
-    position: absolute;
-}
-
-.submenu2 li {
-    display: block;
-}
-
-.menu2 > li:hover .submenu {
-    display: block;
-}
- */
-/*hasta aca*/
-
+/* MENU HAMBURGUESA */
 
 .personajes-total {
     padding-left: 2em;
@@ -187,7 +160,7 @@ body {
 }
 
 
-button {
+main button {
     padding: 10px 25px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -199,13 +172,13 @@ button {
     display: inline-block;
   }
   
-  button {
+main  button {
     border: 2px solid rgb(255, 255, 255);
     z-index: 1;
     color: white;
   }
   
-  button:after {
+main  button:after {
     position: absolute;
     content: "";
     width: 100%;
@@ -217,11 +190,11 @@ button {
     transition: all 0.3s ease;
   }
   
-  button:hover {
+main  button:hover {
     color: rgb(0, 0, 0);
   }
   
-  button:hover:after {
+main  button:hover:after {
     top: auto;
     bottom: 0;
     height: 100%;

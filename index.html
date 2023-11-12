@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./iconnn.png">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="nombrePagina">
+          <a class="encabezado" href="./index.html">Rick and Morty</a>
+      </div>
+      <div class="imagen-encabezado">
+          <img src="./kisspng-rick-sanchez-morty-smith-cartoon-drawing-rick-and-morty-portal-transparent-amp-png-clipar-5ca74edd9a3350.4866108315544685736316.png" height="150">
+      </div>
+      <div class="menu">
+          <nav>
+              <a class="encabezado" id="todos" href="#">Todos</a>
+              <a  class="encabezado" id="mujeres" href="#">Mujeres</a>
+              <a  class="encabezado" id="hombres"   href="#">Hombres</a>
+              <a  class="encabezado" id="sinGenero" href="#">Sin Genero</a>
+              <a  class="encabezado" id="noSeSabe"   href="#">No se sabe</a>
+          </nav>
+      </div>
+  </header>
+
+
+    <main>
+
+      <p class="personajes-total" >Total de personajes (por página): <span id="total-personajes">  </span></p>
+      <br>
+      <div id="root"></div>
+
+      <div class="container-paginador">
+        <p>Total de páginas: <span id="total-paginas"></span></p>
+        <p>Pagina actual: <span id="pagina-actual"></span></p>
+
+        <div class="pagination">
+          <button id="first-page">Primera</button>
+          <button id="prev-page">-</button>
+          <button id="next-page">+</button>
+          <button id="last-page">Ultima</button>
+        </div>
+      </div>
+
+    </main>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>

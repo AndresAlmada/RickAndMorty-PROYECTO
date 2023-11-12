@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: linear-gradient(to top, #000000, #0d0d0d, #161616, #1d1d1d, #252424);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+.nombrePagina{
+    font-size: xx-large;
+}
+
+.imagen-encabezado {
+    align-items: center;
+    align-content: center;
+}
+
+.encabezado{
+    color: 	#97ce4c;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav{
+    padding: 30px;
+    font-size: larger;
+   
+}
+
+.personajes-total {
+    padding-left: 2em;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Antonio', sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    font-size: large;
+
+}
+
+.card {
+    border: 1px groove rgb(104, 104, 104);
+    border-radius: 3px;
+    box-shadow: 10px 10px 8px 0px rgba(82, 82, 82, 0.3);
+    transition: 
+        background-color 312ms ease, 
+        border 300ms ease-in, 
+        border-radius 300ms ease-in; 
+    
+    padding: 3em;
+    
+}
+
+.card-content {
+    padding: 0.5em;
+}
+
+.card-image img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.card-image:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.2);
+    border-radius: 35%;
+}
+
+.card-image:hover {
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+.container-paginador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 50px ;
+    font-size: x-large;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.accion-link {
+    border-top: 1px solid white;
+    text-align: center;
+    margin-top: 1.5em;
+    padding: 0.5em;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+
+button {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  button {
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 1;
+    color: white;
+  }
+  
+  button:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  button:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+

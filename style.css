@@ -43,11 +43,10 @@ nav a:hover {
 
 
 /* MENU HAMBURGUESA */
-
 .abrir-menu {
     display: none;
 }
-
+/* MENU HAMBURGUESA */
 @media screen and (max-width: 550px) {
 
     .encabeza2 {
@@ -61,11 +60,18 @@ nav a:hover {
 
     .nombrePagina {
         font-size: larger;
+        margin-right: 50%;
+    }
+
+    .imagen-encabezado {
+        margin-right: 50%;
     }
 
     .imagen-encabezado img {
         height: 80px;
     }
+
+    /* MENU HAMBURGUESA */
 
    /*  .abrir-menu {
         display: block;
@@ -77,19 +83,29 @@ nav a:hover {
 
     .menu {
         position: absolute;
-        
+        top: o;
+        right: 0;
+        background-image: linear-gradient(to top, #000000bb, #0d0d0db9, #161616a9, #1d1d1dbb, #252424b9);
+        padding: 1rem;
     }
 
-    .menu a {
+    .navega {
+        display: flex;
         flex-direction: column;
-    } */
+        padding: 0;
+    }
+    .navega a {
+        flex-direction: column;
+        align-items: end;
+    } 
 
-
-
+    /* fin MENU HAMBURGUESA */
 
     #root {
         flex-direction: column;
+        margin-top: 1em;
     }
+
 
     .container {
         width: 80%;
@@ -98,6 +114,10 @@ nav a:hover {
 
     .card img{
         width: 100%;
+    }
+
+    .pagination {
+        display: flex;
     }
 }
 

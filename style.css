@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: space-between;
     font-family: 'Orbitron', sans-serif;
-    
+
     padding-top: 1em;
 }
 
@@ -41,6 +41,9 @@ nav a:hover {
     color: rgb(202, 202, 26);
 }
 
+.navega {
+    flex-wrap: wrap;
+}
 
 /* MENU HAMBURGUESA */
 .abrir-menu {
@@ -61,6 +64,7 @@ nav a:hover {
     .nombrePagina {
         font-size: larger;
         margin-right: 50%;
+        margin-bottom: 0.5em;
     }
 
     .imagen-encabezado {
@@ -103,9 +107,8 @@ nav a:hover {
 
     #root {
         flex-direction: column;
-        margin-top: 1em;
+        margin-top: 0.5em;
     }
-
 
     .container {
         width: 80%;
@@ -193,6 +196,18 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
+.container-paginador a {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+}
+
+#flecha {
+    align-items: center;
+}
+
 .accion-link {
     border-top: 1px solid white;
     text-align: center;
@@ -226,7 +241,6 @@ body {
 .pagination {
     margin-top: 20px;
 }
-
 
 main button {
     padding: 10px 25px;
@@ -292,5 +306,4 @@ main  button:hover:after {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }

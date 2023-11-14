@@ -43,10 +43,6 @@ nav a:hover {
     color: rgb(202, 202, 26);
 }
 
-/* .navega {
-    flex-wrap: wrap;
-} */
-
 /* MENU HAMBURGUESA */
 .abrir-menu,
 .cerrar-menu {
@@ -93,7 +89,8 @@ nav a:hover {
         display: flex;
         flex-direction: column;
         margin: auto;
-        margin-top: 5em;
+        margin-top: 7em;
+        margin-right: 0.5em;
 
         text-align: end;
         gap: 0.5rem;

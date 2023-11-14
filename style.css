@@ -96,7 +96,7 @@ nav a:hover {
         gap: 0.5rem;
     
         background-image: linear-gradient(to top, #000000bb, #0d0d0db9, #161616a9, #1d1d1dbb, #252424b9);
-        border: 0.5px solid white;
+        border: 0.5px solid rgba(255, 255, 255, 0.336);
         padding: 0.5rem;
     }
 

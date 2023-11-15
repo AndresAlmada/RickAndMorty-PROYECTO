@@ -33,22 +33,70 @@
 }
 
 
-nav{
+.navega2{
     padding: 30px;
     font-size: larger;  
     margin-right: 0.5em;  
 
 }
 
-nav a:hover {
+.navega2 a:hover {
     color: rgb(202, 202, 26);
 }
 
-.menu nav {
+.menu .navega2 {
     display: flex;
     flex-direction: row;
 }
 
+.nav2 {
+    display: none;
+}
+
+
+
+.menu2 {
+    margin-right: 3em;
+    list-style-type: none;
+    
+    font-size: large;       
+}
+
+.menu2 > li {
+    display: inline-block;
+}
+
+.menu2 a {
+    display: block;
+
+    padding: 5px 8px;
+    color: #97ce4c;
+    text-decoration: none;
+    
+    align-items: end;
+
+    border-radius: 5%;
+
+    border: 0.5px solid #98ce4c31;
+}
+
+#menu-hamburguesa {
+    width: 65px;
+    display: flex;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.submenu li {
+    display: block;
+}
+
+.menu2 > li:hover .submenu {
+    display: block;
+}
 
 
 /* MENU HAMBURGUESA */
@@ -57,63 +105,57 @@ nav a:hover {
     .encabeza2 {
         display: flex;
         
-        margin-bottom: 5%;
-        height: 80px;
-        padding-bottom: 5em;
+        margin-bottom: em;
+        height: 210px;
+        align-items: normal;
+        padding-top: 0;
+    }
+
+    .encabezado {
+        margin: auto;
     }
 
     .nombrePagina {
         margin: auto;
-        margin-top: 20%;
+        
 
         font-size: larger;
-        margin-bottom: 0.5em;
+       
         text-align: center;
-
     }
 
     .imagen-encabezado {
       margin: auto;
-      margin-top: 10%;
     }
 
     .imagen-encabezado img {
         height: 80px;
     }
 
-    /* MENU HAMBURGUESA */
+    /* MENU*/
 
-  /*   .abrir-menu,
-    .cerrar-menu {
-    display:block;
-    }  */  
-
-    .navega {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        margin-top: 7em;
-        margin-right: 0.5em;
-
-        text-align: end;
-        gap: 0.5rem;
-    
-        background-image: linear-gradient(to top, #000000bb, #0d0d0db9, #161616a9, #1d1d1dbb, #252424b9);
-        border: 0.5px solid rgba(255, 255, 255, 0.336);
-        padding: 0.5rem;
+    .menu {
+        display: none;
     }
     
+    .nav2 {
+        display: flex;  
+        margin: auto;
+        margin-right: 0;      
+    }
 
-  
-    .navega a {
-        flex-direction: column;
-    } */ 
+    .nav2 nav {
+        width: 100%;
+        margin:0 ;
+        padding: 0;
+    }
+
 
     /* fin MENU HAMBURGUESA */
 
     #root {
         flex-direction: column;
-        margin-top: 0.5em;
+        margin-top: 3.5em;
     }
 
     .container {
